@@ -22,7 +22,7 @@ def scrape_books(page: Page, *, category: str | None, max_books: int) -> list[Bo
 
     #Criar lista de categorias
     page.goto(URL)
-    Categories_List = dict([[k[25:].replace("/index.html","").split("_")[0].replace("-"," "),k] for k in [k.get_attribute("href") for k in page.locator("div.side_categories").locator("a").all()][1:]])
+    Categories_List: dict = dict([[k[25:].replace("/index.html","").split("_")[0].replace("-"," "),k] for k in [k.get_attribute("href") for k in page.locator("div.side_categories").locator("a").all()][1:]])
 
     #Escolha de categoria e Segunda Condição
     try:
@@ -33,19 +33,23 @@ def scrape_books(page: Page, *, category: str | None, max_books: int) -> list[Bo
     page.goto(newURL)
 
     #Montar lista de livros
-    if page.locator("form.form-horizontal").locator("strong").count() == 1: total,total_page = [int(page.locator("form.form-horizontal").locator("strong").inner_text()) for k in range(2)]
-    else: total,total_page = [int(k.inner_text()) for k in page.locator("form.form-horizontal").locator("strong").all()][::2]
+    if page.locator("form.form-horizontal").locator("strong").count() == 1: 
+       total: int = int(page.locator("form.form-horizontal").locator("strong").inner_text())
+       total_page: int = total
+    else: 
+       total: int = [int(k.inner_text()) for k in page.locator("form.form-horizontal").locator("strong").all()][0]
+       total_page: int = [int(k.inner_text()) for k in page.locator("form.form-horizontal").locator("strong").all()][2]
 
-    newmax_books = max_books if total > max_books else total
-    npages = newmax_books // total_page + (1 if newmax_books % total_page > 0 else 0)
-    books = []
+    newmax_books: int = max_books if total > max_books else total
+    npages: int = newmax_books // total_page + (1 if newmax_books % total_page > 0 else 0)
+    books: list[BookData] = []
     for k in range(npages):
       books += [{"url": "https://books.toscrape.com/catalogue/" + k.locator("a").get_attribute("href")[9:]} for k in page.locator("section").locator("h3").all()]
       if npages > 1 and k + 1 != npages: page.locator("ul.pager").locator("li.next").locator("a").click()
     
     #registrar o restante das informações
      
-    ratings = {"One": 1, "Two": 2, "Three": 3,"Four": 4, "Five": 5}
+    ratings: dict = {"One": 1, "Two": 2, "Three": 3,"Four": 4, "Five": 5}
 
     for i,k in enumerate(books[:newmax_books]):
        page.goto(k["url"])

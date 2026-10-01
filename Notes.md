@@ -47,6 +47,7 @@ Estou certo? Lembrar de perguntar
 
 12. Para o segundo commit, estou corrigindo alguns erros e deixando o código um pouco mais limpo.
     
+13. Agora no terceiro commit, vou tentar arrumar as variáveis.
 
 
 
