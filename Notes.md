@@ -45,7 +45,7 @@ Estou certo? Lembrar de perguntar
 
 11. Não consegui achar um livro que não estivesse em estoque, para criar uma regra. Então vou considerar qualquer valor diferente do formato `In stock (x available)` como fora de estoque.
 
-12.
+12. Para o segundo commit, estou corrigindo alguns erros e deixando o código um pouco mais limpo.
     
 
 
