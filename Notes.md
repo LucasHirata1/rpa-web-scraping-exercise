@@ -3,6 +3,7 @@ Desafio Técnico de Automação 20h
 Os textos a partir daqui vão registrar o que eu estava pensando no momento. Em uma tentativa de explicar o que estou pensando, vou realizar comentários, junto dos códigos que utilizei. Como estudo Engenharia de Produção, peço desculpas caso utilize algum termo de maneira errônea ou equivocada.
 
 Neste primeiro momento, estarei utilizando de uma IA para me auxiliar com a plataforma GITHUB e com as instalações. Após avaliar o desafio com meus conhecimentos e desenvolver a solução, irei utilizar da IA para sofisticar minha solução, se eu identificar melhorias.
+(PS: No início, minha intenção era usar a IA para levar a solução além do que o desafio pedia. Como é algo que hoje faz parte do nosso dia a dia, achei que seria uma boa oportunidade para mostrar mais a maneira que eu penso. Contudo, ao longo do desafio, fui mudando este pensamento e acabei não utilizando para alterar meus códigos.)
 
 
 1. Enquanto leio o enunciado, pauso por um momento para verificar como funcionam as categorias e páginas. Percebi alguns pontos na URL:
@@ -50,5 +51,3 @@ Estou certo? Lembrar de perguntar
 13. Agora no terceiro commit, vou tentar arrumar as variáveis.
 
 14. Relendo o enunciado, percebi que tinha a opção de fazer outras funções. Contudo, talvez pela minha falta de conhecimento, não senti necessidade de realizar nenhuma função externa.
-
-15. No início, minha intenção era usar a IA para levar a solução além do que o desafio pedia. Como é algo que hoje faz parte do nosso dia a dia, achei que seria uma boa oportunidade para mostrar mais a maneira que eu penso. Contudo, ao longo do desafio, fui mudando este pensamento e acabei não utilizando para alterar meus códigos.
