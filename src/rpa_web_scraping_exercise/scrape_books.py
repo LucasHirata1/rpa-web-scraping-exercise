@@ -26,7 +26,7 @@ def scrape_books(page: Page, *, category: str | None, max_books: int) -> list[Bo
 
     #Escolha de categoria e Segunda Condição
     try:
-      if category: newURL = URL + Categories_List[category]
+      if category: newURL = URL + Categories_List[category.lower()]
       else: newURL = URL + "catalogue/category/books_1/index.html"
     except KeyError: return []
 

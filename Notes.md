@@ -49,6 +49,6 @@ Estou certo? Lembrar de perguntar
     
 13. Agora no terceiro commit, vou tentar arrumar as variáveis.
 
+14. Relendo o enunciado, percebi que tinha a opção de fazer outras funções. Contudo, talvez pela minha falta de conhecimento, não senti necessidade de realizar nenhuma função externa.
 
-
-
+15. No início, minha intenção era usar a IA para levar a solução além do que o desafio pedia. Como é algo que hoje faz parte do nosso dia a dia, achei que seria uma boa oportunidade para mostrar mais a maneira que eu penso. Contudo, ao longo do desafio, fui mudando este pensamento e acabei não utilizando para alterar meus códigos.
